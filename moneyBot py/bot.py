@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-TOKEN = 'Njc5MTYwNTY5OTY1NTc2MTky.XmfSzA.LRDVJsKcyqcZORprB8t5Jg_NEdE'
+TOKEN = 
 
 prefix1 = 'money '
 
@@ -74,7 +74,7 @@ async def bot_info(ctx):
     bot_info_embed.set_thumbnail(url = "https://media.discordapp.net/attachments/667104711840628742/667105511602389007/money_logo.png")
     bot_info_embed.add_field(name = "Name", value = "moneyBot")
     bot_info_embed.add_field(name = "Version", value = "1.0.2")
-    bot_info_embed.add_field(name = "Invite Link", value = "https://hitthemoney.github.io/moneyBot-invite/")
+    bot_info_embed.add_field(name = "Invite Link", value = "https://hitthemoney.github.io/moneyBot/")
     bot_info_embed.set_footer(text = "Command: money bot_info")
 
     await ctx.send(embed=bot_info_embed)
