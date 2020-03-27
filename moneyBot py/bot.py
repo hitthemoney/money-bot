@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-TOKEN = ''
+TOKEN = 
 
 prefix1 = 'money '
 
@@ -31,6 +31,7 @@ Commands:
 - money kick <user> <reason>; warns a user (only works if you can kick members)
 - money yt; my YouTube channel
 - money twitch; my Twitch channel
+- money website; my website
 - money bot_info; the bot information including invite link
 
 WORKING ON: money mute <user> and money server_info```""")
@@ -41,6 +42,9 @@ async def yt(ctx):
 @client.command(aliases=['TWITCH', 'Twitch', 'twiCH', 'TwiCH', 'Twichh', 'TWITCHH', 'twitchh'])
 async def twitch(ctx):
     await ctx.send('Go check out: https://twitch.tv/hitthemoney')
+@client.command(aliases=['Website', 'WEBSITE', 'webste', 'Web', 'web', 'WEB', 'wwebsite'])
+async def website(ctx):
+    await ctx.send('My official website is, https://hitthemoney.github.io/')
 
 @client.command(pass_context = True, aliases=['WARN', 'Warn',' warn', 'warN', 'WARNN', 'Warnn', 'warnn'])
 @commands.has_permissions(kick_members = True)
@@ -48,7 +52,7 @@ async def warn(ctx, name, reason):
     await ctx.send("""You have been warned {}. 
 Reason: {}""".format(name, reason))
 
-@client.command(pass_context = True)
+@client.command(pass_context = True, aliases=['Kick','KICK','KICKK','Kickk','kickk'])
 @commands.has_permissions(kick_members = True)
 async def kick(ctx, name: discord.Member, *, reason = None):
     await name.kick(reason = reason)
