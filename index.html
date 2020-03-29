@@ -2,72 +2,79 @@
 <html>
 
 <head>
-    <title>hitthemoney</title>
-    <style>
-        @font-face {
-            font-family: 'gamefont';
-            src: url('fonts/futuraboldital.ttf');
-        }
-        
-        .text {
-            margin-left: 10px;
-            font-family: 'Courier New', Courier, monospace;
-        }
+  <title>hitthemoney</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+  <link rel="manifest" href="/icon/site.webmanifest">
+  <style>
+    @font-face {
+      font-family: 'gamefont';
+      src: url('fonts/futuraboldital.ttf');
+    }
 
-        html,
-        body {
-            font-family: "gamefont";
-            margin: 0;
-            padding: 0;
-            background-color: #f1c40f;
-        }
+    .text {
+      margin-left: 10px;
+      font-family: 'Courier New', Courier, monospace;
+    }
 
-        #navBar {
-            background-color: rgba(0, 0, 0, .3);
-            color: #000;
-            width: 100%;
-            height: 85px;
-        }
+    html,
+    body {
+      font-family: "gamefont";
+      margin: 0;
+      padding: 0;
+      background-color: #f1c40f;
+    }
 
-        #navTitle {
-            margin-top: -80px;
-            font-size: 60px;
-            text-align: center;
-        }
+    #navBar {
+      background-color: rgba(0, 0, 0, .3);
+      color: #000;
+      width: 100%;
+      height: 85px;
+    }
 
-    </style>
-    <meta http-equiv="Refresh"
+    #navTitle {
+      margin-top: -80px;
+      font-size: 60px;
+      text-align: center;
+    }
+  </style>
+  <meta http-equiv="Refresh"
     content="10; url=https://discordapp.com/api/oauth2/authorize?client_id=679160569965576192&permissions=2147483127&scope=bot" />
 </head>
 
 <body>
-    <div id="navBar"></div>
-<a style="color: #000; text-decoration:none" href="https://hitthemoney.github.io"><h1 id="navTitle">hitthemoney.github.io<h1></a>
-  <div class="text" >moneyBot Invite Link</div>
+  <div id="navBar"></div>
+  <a style="color: #000; text-decoration:none" href="https://hitthemoney.github.io">
+    <h1 id="navTitle">hitthemoney.github.io<h1>
+  </a>
+  <div class="text">moneyBot Invite Link</div>
   <br>
-    <div class="text" id="countdown">Redirect 10 seconds</div>
-        </p>
-   <p class="text">Or click <a href="https://discordapp.com/api/oauth2/authorize?client_id=679160569965576192&permissions=2147483127&scope=bot">HERE</a></p>
-      <!-- <a href="https://discordapp.com/api/oauth2/authorize?client_id=679160569965576192&permissions=2147483127&scope=bot">
+  <div class="text" id="countdown">Redirect 10 seconds</div>
+  </p>
+  <p class="text">Or click <a
+      href="https://discordapp.com/api/oauth2/authorize?client_id=679160569965576192&permissions=2147483127&scope=bot">HERE</a>
+  </p>
+  <!-- <a href="https://discordapp.com/api/oauth2/authorize?client_id=679160569965576192&permissions=2147483127&scope=bot">
           <img class="text"alt="Invite" src="https://media.discordapp.net/attachments/667104711840628742/693181440581435482/Invite.png" width="150" height="50">
-          </a> --> 
-        <br>
-        <p class="text">For the code to the bot click <a
-          href="https://raw.githubusercontent.com/hitthemoney/moneyBot/master/moneyBot%20py/bot.py">HERE</a>
-      </p>
-        <script>
-          var timeleft = 9;
-          var redirectTimer = setInterval(function () {
-            if (timeleft <= 0) {
-              clearInterval(redirectTimer);
-              document.getElementById("countdown").innerHTML = "Redirecting";
-            } else {
-              document.getElementById("countdown").innerHTML = "Redirect in " + timeleft + " seconds";
-            }
-            timeleft -= 1;
-          }, 1000);
-        </script>
-      
-      </body>
+          </a> -->
+  <br>
+  <p class="text">For the code to the bot click <a
+      href="https://raw.githubusercontent.com/hitthemoney/moneyBot/master/moneyBot%20py/bot.py">HERE</a>
+  </p>
+  <script>
+    var timeleft = 9;
+    var redirectTimer = setInterval(function () {
+      if (timeleft <= 0) {
+        clearInterval(redirectTimer);
+        document.getElementById("countdown").innerHTML = "Redirecting";
+      } else {
+        document.getElementById("countdown").innerHTML = "Redirect in " + timeleft + " seconds";
+      }
+      timeleft -= 1;
+    }, 1000);
+  </script>
+
+</body>
 
 </html>
