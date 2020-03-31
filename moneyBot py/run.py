@@ -4,7 +4,7 @@ import os
 import discord
 from discord.ext import commands
 
-TOKEN = 'Njc5MTYwNTY5OTY1NTc2MTky.Xn5R-A.npCZQ-AavK5Gi4k1Bxen4n2tncQ'
+TOKEN = 'You not getting my PIN'
 prefix1 = 'money '
 client = commands.Bot(command_prefix = [prefix1])
 client.remove_command('help')
