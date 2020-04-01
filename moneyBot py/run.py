@@ -1,11 +1,7 @@
 import discord
 from discord.ext import commands
 
-<<<<<<< HEAD
 TOKEN = ''
-=======
-TOKEN = 'You not getting my PIN'
->>>>>>> origin/master
 prefix1 = 'money '
 client = commands.Bot(command_prefix = [prefix1])
 client.remove_command('help')
@@ -20,5 +16,8 @@ client.load_extension('cogs.info_commands')
 client.load_extension('cogs.help_commands')
 client.load_extension('cogs.social_commands')
 client.load_extension('cogs.my_commands')
+#April Fools Commands
+client.remove_command('warn')
+client.load_extension('cogs.april_fools_commands')
 
 client.run(TOKEN) 

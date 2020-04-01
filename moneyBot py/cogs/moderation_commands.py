@@ -80,7 +80,7 @@ Reason: {}**""".format(guild, reason))
 
     @commands.command(pass_context=True, aliases=['MUTE', 'Mute', 'mutee'])
     @commands.has_permissions(kick_members = True)
-    async def mute(self, ctx, name: discord.Member, *, reason: None):
+    async def mute(self, ctx, name: discord.Member, *, reason):
         messageAuthor = ctx.message.author
         moneyBot = await self.client.fetch_user(679160569965576192)
         if name == messageAuthor:
