@@ -1,7 +1,11 @@
 import discord
 from discord.ext import commands
 
+<<<<<<< HEAD
 TOKEN = ''
+=======
+TOKEN = 'You not getting my PIN'
+>>>>>>> origin/master
 prefix1 = 'money '
 client = commands.Bot(command_prefix = [prefix1])
 client.remove_command('help')
