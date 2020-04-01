@@ -15,7 +15,7 @@ class info_commands(commands.Cog):
         )
         botinfo_embed.set_thumbnail(url = "https://media.discordapp.net/attachments/667104711840628742/667105511602389007/money_logo.png")
         botinfo_embed.add_field(name = "Name", value = "moneyBot")
-        botinfo_embed.add_field(name = "Version", value = "1.0.2")
+        botinfo_embed.add_field(name = "Version", value = "1.0.4")
         botinfo_embed.add_field(name = "Invite Link", value = "https://hitthemoney.github.io/money-bot/")
         botinfo_embed.set_footer(text = "Command: money bot_info")
 

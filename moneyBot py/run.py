@@ -1,10 +1,7 @@
-import os
-#runs all of the files
-
 import discord
 from discord.ext import commands
 
-TOKEN = 'Njc5MTYwNTY5OTY1NTc2MTky.Xn5R-A.npCZQ-AavK5Gi4k1Bxen4n2tncQ'
+TOKEN = ''
 prefix1 = 'money '
 client = commands.Bot(command_prefix = [prefix1])
 client.remove_command('help')
@@ -13,9 +10,11 @@ client.remove_command('help')
 async def on_ready():
     print('Bot is ready.')
 
+#runs all of the files
 client.load_extension('cogs.moderation_commands')
 client.load_extension('cogs.info_commands')
 client.load_extension('cogs.help_commands')
 client.load_extension('cogs.social_commands')
+client.load_extension('cogs.my_commands')
 
 client.run(TOKEN) 

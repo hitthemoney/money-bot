@@ -19,7 +19,6 @@ Commands:
 - money unban <user id> <bool (True reinvites the member and False does not)>; unbans a user (only works if you can ban members)
 - money mute <user> <reason>; makes a user unable to chat (only works if you can kick members, and have setup a role called "muted" (case sensitive))
 - money unmute <user> <reason>; unmutes a muted user (only works if you can kick members, and have the "muted" role)
-- money invite <id>; invites a user
 - money yt; my YouTube channel
 - money twitch; my Twitch channel
 - money website; my website
